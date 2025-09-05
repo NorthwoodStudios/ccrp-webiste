@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply - CCRP</title>
+  <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left stage bar -->
+    <div class="stages">
+      <div class="stage active" data-stage="0">1</div>
+      <div class="stage" data-stage="1">2</div>
+      <div class="stage" data-stage="2">3</div>
+      <div class="stage" data-stage="3">4</div>
+    </div>
+
+    <!-- Right question panel -->
+    <div class="questions">
+      <div class="question active" data-stage="0">
+        <h2>Stage 1: Personal Info</h2>
+        <label>Name:</label>
+        <input type="text" placeholder="Your name">
+        <label>Discord Tag:</label>
+        <input type="text" placeholder="Username#1234">
+      </div>
+
+      <div class="question" data-stage="1">
+        <h2>Stage 2: Experience</h2>
+        <label>Roleplay Experience:</label>
+        <textarea placeholder="Describe your experience..."></textarea>
+      </div>
+
+      <div class="question" data-stage="2">
+        <h2>Stage 3: Server Knowledge</h2>
+        <label>How familiar are you with CCRP rules?</label>
+        <textarea placeholder="Explain here..."></textarea>
+      </div>
+
+      <div class="question" data-stage="3">
+        <h2>Stage 4: Final Thoughts</h2>
+        <label>Why should you be accepted?</label>
+        <textarea placeholder="Your answer..."></textarea>
+      </div>
+
+      <!-- Navigation buttons -->
+      <div class="nav-buttons">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="apply.js"></script>
+</body>
+</html>
