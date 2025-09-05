@@ -18,29 +18,54 @@
 
     <!-- Right question panel -->
     <div class="questions">
+      <!-- Stage 1 -->
       <div class="question active" data-stage="0">
-        <h2>Stage 1: Personal Info</h2>
-        <label>Name:</label>
-        <input type="text" placeholder="Your name">
-        <label>Discord Tag:</label>
+        <h2>Stage 1: Basic Info</h2>
+        <label>Roblox Username:</label>
+        <input type="text" placeholder="Your Roblox username">
+        <label>Discord Username:</label>
         <input type="text" placeholder="Username#1234">
+        <label>Discord ID:</label>
+        <input type="text" placeholder="Your Discord ID">
       </div>
 
+      <!-- Stage 2 -->
       <div class="question" data-stage="1">
-        <h2>Stage 2: Experience</h2>
-        <label>Roleplay Experience:</label>
-        <textarea placeholder="Describe your experience..."></textarea>
+        <h2>Stage 2: Personal Details</h2>
+        <label>How old are you?</label>
+        <input type="number" placeholder="Your age">
+        <label>Why do you want to become a part of the staff team here at CCRP? (2+ Sentences Required)</label>
+        <textarea placeholder="Explain your reasons..."></textarea>
+        <label>Do you have any past experiences within the moderating section of a staff team? If so, list them below:</label>
+        <textarea placeholder="List past experience..."></textarea>
+        <label>How good is your Spelling, Punctuation and Grammar out of a level 1-10?</label>
+        <input type="number" min="1" max="10" placeholder="1-10">
+        <label>How many hours are you able to moderate per week?</label>
+        <input type="number" placeholder="Hours per week">
       </div>
 
+      <!-- Stage 3 -->
       <div class="question" data-stage="2">
-        <h2>Stage 3: Server Knowledge</h2>
-        <label>How familiar are you with CCRP rules?</label>
-        <textarea placeholder="Explain here..."></textarea>
+        <h2>Stage 3: Understanding Rules</h2>
+        <label>Do you understand that if you have used AI on this application, your application will be denied and you will be blacklisted from staff for 2 weeks?</label>
+        <select>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <label>Do you understand that if you ask for your application to be read, your application will be automatically denied?</label>
+        <select>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
       </div>
 
+      <!-- Stage 4 -->
       <div class="question" data-stage="3">
         <h2>Stage 4: Final Thoughts</h2>
-        <label>Why should you be accepted?</label>
+        <label>Any other questions that you would like to ask, if no then say "N/A".</label>
         <textarea placeholder="Your answer..."></textarea>
       </div>
 
